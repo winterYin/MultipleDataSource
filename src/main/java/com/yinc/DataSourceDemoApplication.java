@@ -2,6 +2,7 @@ package com.yinc;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yinc.beanConfig.MyConfig;
+import com.yinc.beanConfig.SpringContext;
 import com.yinc.dataConfig.DynamicDataSourceConfig;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -18,7 +19,7 @@ public class DataSourceDemoApplication {
 
     public static void main(String[] args) {
 
-        ConfigurableApplicationContext run =SpringApplication.run(DataSourceDemoApplication.class, args);
+        ConfigurableApplicationContext run =SpringContext.run(DataSourceDemoApplication.class, args);
 
         MyConfig mybean = run.getBean(MyConfig.class);
         MyConfig mybean2 = run.getBean(MyConfig.class);

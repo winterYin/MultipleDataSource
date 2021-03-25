@@ -1,6 +1,5 @@
 package com.yinc.beanConfig;
 
-import com.yinc.DataSourceDemoApplication;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ConfigurableApplicationContext;
